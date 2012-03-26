@@ -18,6 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SignalR.MessageBus;
 
 namespace SignalR.WindowsAzureServiceBus
 {
@@ -33,5 +34,5 @@ namespace SignalR.WindowsAzureServiceBus
 
         public ulong Id { get { return this.id; } }
     }
-    
+
 }

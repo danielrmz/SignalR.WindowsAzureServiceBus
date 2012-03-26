@@ -62,6 +62,7 @@ namespace SignalR.WindowsAzureServiceBus
 
         private static int GetRoleInstanceNumber()
         {
+            return 1;
             var roleInstanceId = RoleEnvironment.CurrentRoleInstance.Id;
             var li1 = roleInstanceId.LastIndexOf(".");
             var li2 = roleInstanceId.LastIndexOf("_");
