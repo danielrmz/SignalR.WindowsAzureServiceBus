@@ -65,7 +65,7 @@ namespace SignalR.WindowsAzureServiceBus
                 this.Complete(result, false);
             }
 
-            public static MessageResult End(IAsyncResult ar)
+            public new static MessageResult End(IAsyncResult ar)
             {
                 return TypedAsyncResult<MessageResult>.End(ar);
             }
